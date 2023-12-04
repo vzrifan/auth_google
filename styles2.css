@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+.form {
+    background: transparent;
+    border: 5px solid rgba(225, 225, 225, 0.685);
+    backdrop-filter: blur(10);
+    color: #fff;
+    width: 420px;
+    margin: 0 auto 50px;
+    padding: 30px 40px;
+    border-radius: 15px;
+}
+
+.form .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 5px solid rgba(225, 225, 225, 0.685);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20 px;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+    padding-left: 15px;
+}
+
+.input-box i {
+    position: absolute;
+    right: 30px;
+    top: 18px;
+    transform: translate(-50);
+    font-size: 20px;
+    color: #fff;
+}
+
+.form button {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.form button:hover,
+.form button:active,
+.form button:focus {
+    background: #43a047;
+}
+
+.form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+}
+
+.form .message a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+.form .register-form {
+    display: none;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.container:before,
+.container:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container .info {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.container .info h1 {
+    margin: 0 0 15px;
+    padding: 0;
+    font-size: 36px;
+    font-weight: 300;
+    color: #1a1a1a;
+}
+
+.container .info span {
+    color: #4d4d4d;
+    font-size: 12px;
+}
+
+.container .info span a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.container .info span .fa {
+    color: #ef3b3a;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(d.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.toRegister {
+    margin: auto;
+    margin-left: 200px;
+    color: white;
+}
+
+.showPass {
+    display: inline-flex;
+    margin-right: 120px;
+}
+
+.showPass input {
+    margin-top: 3px;
+}
+
+.showPass label {
+    white-space: nowrap;
+    margin-left: 10px;
+}
+
+.rememberUser {
+    display: inline-flex;
+    margin-right: 81px;
+}
+
+.rememberUser input {
+    margin-top: 3px;
+}
+
+.rememberUser label {
+    white-space: nowrap;
+    margin-left: 10px;
+}
+
+.error-message {
+    text-align: center;
+    color: red;
+}
+
+.g-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.registerp {
+    color: white;
+}

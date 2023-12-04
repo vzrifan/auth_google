@@ -1,0 +1,186 @@
+body {
+  background-image: url("https://w.wallhaven.cc/full/jx/wallhaven-jxl3qp.jpg");
+  font-family: "Courier", sans-serif;
+  margin: 0;
+}
+
+.title {
+  color: #ea80fc;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.addButton {
+  text-align: center;
+  background-color: #d1c4e9;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 7px;
+}
+
+.addButton input {
+  width: auto;
+  height: 50px;
+  font-size: large;
+  background-color: #03a9f4;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 7px;
+  font-family: "Courier", sans-serif;
+}
+
+.delButton {
+  background-color: #ef5350;
+  cursor: pointer;
+  border-radius: 7px;
+  margin: 5px;
+  font-family: "Courier", sans-serif;
+}
+
+.readButton {
+  background-color: #FFb6C1;
+  cursor: pointer;
+  border-radius: 7px;
+  margin: 5px;
+  font-family: "Courier", sans-serif;
+}
+
+.editButton {
+  background-color: #8bc34a;
+  cursor: pointer;
+  border-radius: 7px;
+  margin: 5px;
+  font-family: "Courier", sans-serif;
+}
+
+table {
+  width: 100%;
+  border-radius: 30px;
+}
+
+table,
+th,
+td {
+  border: 2px solid #d1c4e9;
+  border-radius: 2px;
+}
+
+td {
+  color: #4a148c;
+}
+
+th {
+  background-color: #d1c4e9;
+  color: #e040fb;
+}
+
+table {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #d1c4e9;
+}
+
+tr:nth-child(odd) {
+  background-color: #35e5f5;
+}
+
+.allButton {
+  display: ruby;
+  text-align: center;
+  margin: 30px;
+}
+
+.main {
+  width: 70%;
+  margin: 0 auto;
+  background-color: #ab47bc;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-top: 10px;
+}
+
+#addForm {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #d1c4e9;
+  color: #ffffff;
+  padding: 20px;
+}
+
+#editForm {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #d1c4e9;
+  color: #ffffff;
+  padding: 20px;
+}
+
+label {
+  display: block;
+  font: "Courier", 1rem "Fira Sans", sans-serif;
+}
+
+input,
+label {
+  margin: 0.4rem 0;
+}
+
+.logout {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.logout input {
+  background-color: springgreen;
+  font-family: "Courier", sans-serif;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #999999;
+}
+
+.wrapper {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.welcome_txt {
+  margin: 20px;
+  background-color: #9595ff;
+  padding: 10px;
+  border: #D6D6D6 solid 1px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.google_box {
+  margin: 20px;
+  background-color: #9595ff;
+  padding: 10px;
+  border: #F7CFCF solid 1px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.google_box .image {
+  text-align: center;
+}
