@@ -4,8 +4,10 @@ session_start();
 
 if (isset($_SESSION["user_id"])) {
     $username = $_SESSION["user_id"];
-} else {
+} elseif(isset($_SESSION['google_data']['name'])) {
     $username = $_SESSION['google_data']['name'];
+}else{
+  header("location:index.php");
 }
 
 ?>

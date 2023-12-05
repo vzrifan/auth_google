@@ -4,8 +4,10 @@ session_start();
 
 if (isset($_SESSION["user_id"])) {
     $username = $_SESSION["user_id"];
+} elseif (isset($_SESSION['google_data']['name'])) {
+    $username = $_SESSION['google_data']['name'];
 } else {
-    $username = $_SESSION["google_data"]["name"];
+    header("location:index.php");
 }
 
 
@@ -63,7 +65,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-$result = mysqli_query($conn, "SELECT * FROM mahasiswa_ilkom WHERE USERNAME = '$username'");
+$search = isset($_GET['search']) ? $_GET['search'] : '';
+
+$result = mysqli_query($conn, "SELECT * FROM mahasiswa_ilkom WHERE USERNAME = '$username' AND (semester LIKE '%$search%' OR kelas LIKE '%$search%' OR kode_mk LIKE '%$search%' OR nama_mk LIKE '%$search%' OR sks LIKE '%$search%' OR nilai LIKE '%$search%' OR bobot LIKE '%$search%')");
 
 ?>
 
@@ -155,6 +159,11 @@ $result = mysqli_query($conn, "SELECT * FROM mahasiswa_ilkom WHERE USERNAME = '$
             </form> -->
             </div>
         </div>
+        <form class="d-flex" method="GET">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search">
+            <button class="btn btn-dark searchBtn" type="submit">Search</button>
+        </form>
+
     </nav>
     <div id="addForm" style="display: none;">
         <form method="POST" enctype="multipart/form-data">
