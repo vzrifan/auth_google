@@ -106,6 +106,8 @@ if (isset($error)) {
 					<button type="submit">Login</button>
 				</form>
 			</div>
+			<div class="col" style="height: 10px;"></div>
+			<a href="login_admin.php" style="color: rebeccapurple;">Login as admin</a>
 		</div>
 	</div>
 

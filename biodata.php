@@ -20,9 +20,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $email = $_POST["inputEmail"];
         $gender = $_POST["gridRadios"];
 
-        $sql = "INSERT INTO biodata (NAMA, NIM, PRODI, ALAMAT, HP, EMAIL, GENDER, USERNAME) VALUES (
-            '$nama', '$nim', '$prodi', '$alamat', '$hp', '$email', '$gender', '$username'
-        )";
+        $sql = "INSERT INTO biodata (NAMA, NIM, PRODI, ALAMAT, HP, EMAIL, GENDER, USERNAME) 
+        VALUES ('$nama', '$nim', '$prodi', '$alamat', '$hp', '$email', '$gender', '$username')
+        ON DUPLICATE KEY UPDATE 
+            NAMA = VALUES(NAMA), 
+            PRODI = VALUES(PRODI), 
+            ALAMAT = VALUES(ALAMAT), 
+            HP = VALUES(HP), 
+            EMAIL = VALUES(EMAIL), 
+            GENDER = VALUES(GENDER), 
+            USERNAME = VALUES(USERNAME)";
+
 
         mysqli_query($conn, $sql);
     }

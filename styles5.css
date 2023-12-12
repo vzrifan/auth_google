@@ -1,0 +1,29 @@
+.delButton {
+    background-color: #ef5350;
+    cursor: pointer;
+    border-radius: 7px;
+    margin: 5px;
+    font-family: "Courier", sans-serif;
+}
+
+.readButton {
+    background-color: #FFb6C1;
+    cursor: pointer;
+    border-radius: 7px;
+    margin: 5px;
+    font-family: "Courier", sans-serif;
+}
+
+.editButton {
+    background-color: #8bc34a;
+    cursor: pointer;
+    border-radius: 7px;
+    margin: 5px;
+    font-family: "Courier", sans-serif;
+}
+
+.allButton {
+    display: ruby;
+    text-align: center;
+    margin: 30px;
+}
